@@ -1,0 +1,25 @@
+{
+  "name": "discord-stars",
+  "version": "1.0.0",
+  "description": "A simple Discord bot to reward your server members.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DDynamic/discord-stars.git"
+  },
+  "author": "Dylan Seidt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DDynamic/discord-stars/issues"
+  },
+  "homepage": "https://github.com/DDynamic/discord-stars#readme",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.2.0",
+    "moment": "^2.24.0",
+    "pg": "^7.18.1"
+  }
+}
