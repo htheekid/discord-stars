@@ -1,0 +1,13 @@
+{
+    "name": "discord-stars",
+    "description": "A simple Discord bot to reward your server members.",
+    "repository": "https://github.com/DDynamic/discord-stars",
+    "keywords": [
+        "discord",
+        "node",
+        "postgres"
+    ],
+    "addons": [
+        "heroku-postgresql"
+    ]
+}
