@@ -89,7 +89,7 @@ ${process.env.DISCORD_PREFIX}delete <star_id> - deletes a star, find the star_id
           var mention = msg.mentions.members.first();
 
           if (mention) {
-            pool.query('SELECT COUNT(*) FROM stars WHERE user_id = $1 AND server_id = $2', [id, msg.guild.id], (err, res) => {
+            pool.query('SELECT COUNT(*) FROM stars WHERE user_id = $1 AND server_id = $2', [mention.id, msg.guild.id], (err, res) => {
               var stars = res.rows[0]['count'];
 
               var embed = new Discord.RichEmbed();
