@@ -26,17 +26,16 @@ pool.query(`
   });
 
   client.on('message', msg => {
-    if (msg.content.startsWith(process.env.DISCORD_PREFIX)) {
-      switch (msg.content.split(process.env.DISCORD_PREFIX)[1].split(' ')[0]) {
+    if (msg.content.startsWith(process.env.DISCORD_!)) {
+      switch (msg.content.split(process.env.DISCORD_!)[1].split(' ')[0]) {
         case 'help':
           msg.channel.send(`
-Discord Stars, a simple Discord bot to reward your server members, created by @DDynamic. Licensed under the MIT License. \`\`\`
-${process.env.DISCORD_PREFIX}help - shows helpful information
-${process.env.DISCORD_PREFIX}leaderboard - lists members and a count of their stars
-${process.env.DISCORD_PREFIX}list <@Member> - lists a member's stars
-${process.env.DISCORD_PREFIX}count <@Member> - counts a member's stars
-${process.env.DISCORD_PREFIX}add <@Member> <message> - adds a star to a member
-${process.env.DISCORD_PREFIX}delete <star_id> - deletes a star, find the star_id via the list command
+${process.env.DISCORD_1}help - shows helpful information
+${process.env.DISCORD_1}leaderboard - lists members and a count of their stars
+${process.env.DISCORD_1}list <@Member> - lists a member's stars
+${process.env.DISCORD_1}count <@Member> - counts a member's stars
+${process.env.DISCORD_1}add <@Member> <message> - adds a star to a member
+${process.env.DISCORD_1}delete <star_id> - deletes a star, find the star_id via the list command
 \`\`\`
           `);
           break;
